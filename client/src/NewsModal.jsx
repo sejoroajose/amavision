@@ -36,7 +36,8 @@ export default function NewsModal() {
     const today = new Date().toDateString()
     localStorage.setItem('newsModalLastShown', today)
 
-    // No need to reload the page when closing naturally
+    // Reload the page after the modal closes
+    window.location.reload()
   }
 
   return (
