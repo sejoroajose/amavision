@@ -114,7 +114,7 @@ const Hero = () => {
 
             <h1
               ref={headingRef}
-              className="font-neuemachina text-4xl md:text-[65px] md:text-left text-custom-black leading-tight mb-6"
+              className="font-neuemachina text-4xl md:text-[65px] text-center md:text-left text-custom-black leading-tight mb-6"
             >
               Hon. (Dr). Adegboyega Musthofa Adebayo
             </h1>

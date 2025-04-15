@@ -41,9 +41,7 @@ const AnimatedNav = () => {
       } ${isVisible ? 'top-0' : '-top-24'}`}
     >
       <div className="container mx-auto !md:px-28 lg:px-16">
-        {/* Changed layout structure to use 3 columns for proper centering */}
         <div className="flex items-center justify-between h-20">
-          {/* Left section - Logo */}
           <div className="flex-shrink-0 w-1/4">
             <a href="/" className="flex items-center">
               <img src={logo} alt="Logo" className="h-10 w-10 mr-3" />
@@ -52,9 +50,8 @@ const AnimatedNav = () => {
               </span>
             </a>
           </div>
-
           {/* Center section - Nav items */}
-          <nav className="hidden lg:flex items-center justify-center w-2/4">
+          <nav className="hidden lg:flex items-center font-cabinetGrotesk justify-center w-2/4">
             <div className="flex items-center space-x-8">
               {navItems.map((item) => (
                 <a
@@ -157,7 +154,7 @@ const AnimatedNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="mt-8 px-4">
+        <nav className="mt-8 text-center px-4">
           <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.name}>
