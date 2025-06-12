@@ -114,7 +114,7 @@ const Hero = () => {
 
             <h1
               ref={headingRef}
-              className="font-neuemachina text-4xl md:text-[65px] text-center md:text-left text-custom-black leading-tight mb-6"
+              className="font-neuemachina text-2xl md:text-[65px] text-center md:text-left text-custom-black leading-tight mb-6"
             >
               Hon. (Dr). Adegboyega Musthofa Adebayo
             </h1>
@@ -131,17 +131,16 @@ const Hero = () => {
               policies for the development and prosperity of Osun State.
             </p>
 
-            <div className="flex space-x-4">
-              <button className="px-8 py-3 bg-custom-maroon text-custom-white font-cabinetGrotesk rounded-full hover:bg-opacity-90 transition-all duration-300">
+            <div className="flex text-md space-x-4">
+              <button className="px-4 py-2 bg-custom-maroon text-custom-white font-cabinetGrotesk rounded-full hover:bg-opacity-90 transition-all duration-300">
                 Learn More
               </button>
-              <button className="px-8 py-3 bg-transparent border-2 border-custom-gold text-custom-black font-cabinetGrotesk rounded-full hover:bg-custom-gold hover:bg-opacity-10 transition-all duration-300">
-                Contact Office
+              <button className="px-4 py-2  bg-transparent border-2 border-custom-gold text-custom-black font-cabinetGrotesk rounded-full hover:bg-custom-gold hover:bg-opacity-10 transition-all duration-300">
+                Contact
               </button>
             </div>
           </div>
 
-          {/* Right column - Image & icons - enlarged and positioned to touch stats */}
           <div className="w-full md:w-1/2 relative">
             <div ref={imageRef} className="relative z-10">
               <img
@@ -152,7 +151,6 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-custom-gold opacity-20 rounded-full blur-2xl -z-10"></div>
             </div>
 
-            {/* Floating icons - adjusted positions to match enlarged image */}
             <div ref={iconsRef} className="absolute inset-0 z-20">
               <div className="absolute top-1/3 -left-12 bg-custom-white p-4 rounded-full shadow-lg">
                 <img src={taxIcon} alt="Tax Icon" className="w-10 h-10" />
@@ -165,11 +163,7 @@ const Hero = () => {
                 />
               </div>
               <div className="absolute top-2/3 left-1/4 bg-custom-white p-4 rounded-full shadow-lg">
-                <img
-                  src={naira}
-                  alt="Revenue Icon"
-                  className="w-10 h-10"
-                />
+                <img src={naira} alt="Revenue Icon" className="w-10 h-10" />
               </div>
             </div>
           </div>
